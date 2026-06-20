@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor - History</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <h2><i class="fa-solid fa-heart-pulse"></i> SPM</h2>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chart-simple"></i> Dashboard</a></li>
+            <li><a href="history.html" style="color: var(--text-light); background: var(--input-bg);"><i class="fa-solid fa-clock-history"></i> History</a></li>
+            <li><a href="alerts.html"><i class="fa-solid fa-bell"></i> Alerts</a></li>
+            <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>System History</h1>
+        <p>Previous monitoring records</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>CPU</th>
+                    <th>RAM</th>
+                    <th>Disk</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25/07/2025</td>
+                    <td>09:30</td>
+                    <td>32%</td>
+                    <td>50%</td>
+                    <td>60%</td>
+                    <td><span class="status normal">Normal</span></td>
+                </tr>
+                <tr>
+                    <td>25/07/2025</td>
+                    <td>10:00</td>
+                    <td>76%</td>
+                    <td>68%</td>
+                    <td>64%</td>
+                    <td><span class="status warning">Warning</span></td>
+                </tr>
+                <tr>
+                    <td>25/07/2025</td>
+                    <td>11:30</td>
+                    <td>91%</td>
+                    <td>82%</td>
+                    <td>79%</td>
+                    <td><span class="status critical">Critical</span></td>
+                </tr>
+                <tr>
+                    <td>25/07/2025</td>
+                    <td>12:00</td>
+                    <td>41%</td>
+                    <td>55%</td>
+                    <td>61%</td>
+                    <td><span class="status normal">Normal</span></td>
+                </tr>
+                <tr>
+                    <td>25/07/2025</td>
+                    <td>01:30</td>
+                    <td>38%</td>
+                    <td>46%</td>
+                    <td>57%</td>
+                    <td><span class="status normal">Normal</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>

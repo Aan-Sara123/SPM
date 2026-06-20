@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor - Alerts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <h2><i class="fa-solid fa-heart-pulse"></i> SPM</h2>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chart-simple"></i> Dashboard</a></li>
+            <li><a href="history.html"><i class="fa-solid fa-clock-history"></i> History</a></li>
+            <li><a href="alerts.html" style="color: var(--text-light); background: var(--input-bg);"><i class="fa-solid fa-bell"></i> Alerts</a></li>
+            <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>System Alerts</h1>
+        <p>Recent critical threshold events</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Component</th>
+                    <th>Issue Description</th>
+                    <th>Severity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>11:30 AM</td>
+                    <td>CPU</td>
+                    <td>Usage spike detected over 90%</td>
+                    <td><span class="status critical">Critical</span></td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>RAM</td>
+                    <td>Memory load approaching capacity limits</td>
+                    <td><span class="status warning">Warning</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>

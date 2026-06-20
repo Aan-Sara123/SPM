@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor - Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <h2><i class="fa-solid fa-heart-pulse"></i> SPM</h2>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chart-simple"></i> Dashboard</a></li>
+            <li><a href="history.html"><i class="fa-solid fa-clock-history"></i> History</a></li>
+            <li><a href="alerts.html"><i class="fa-solid fa-bell"></i> Alerts</a></li>
+            <li><a href="settings.html" style="color: var(--text-light); background: var(--input-bg);"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Settings</h1>
+        <p>Configure your monitoring system preference thresholds</p>
+
+        <form class="login-form" style="max-width: 500px; background-color: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-color);">
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label style="display:block; margin-bottom:0.5rem; color:var(--text-muted);">User Name</label>
+                <div class="input-group">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" value="Admin User">
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label style="display:block; margin-bottom:0.5rem; color:var(--text-muted);">Alert Threshold (%)</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-gauge-high input-icon"></i>
+                    <input type="number" value="80">
+                </div>
+            </div>
+
+            <button type="button" class="btn-signin">Save Settings</button>
+        </form>
+    </main>
+
+</body>
+</html>
