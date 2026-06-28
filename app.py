@@ -5,6 +5,7 @@ Backend Flask API — updated with user auth and per-user metrics.
 from datetime import datetime, timezone
 from flask import Flask, request, jsonify
 import database
+from predictor import predict_cpu
 from config import HOST, PORT, OFFLINE_THRESHOLD_SECONDS, DEFAULT_HISTORY_LIMIT
 
 app = Flask(__name__)
@@ -126,11 +127,13 @@ def user_metrics(username):
 
     history = database.get_history_for_user(username)
     alerts  = database.get_alerts_for_user(username)
+    prediction = predict_cpu(username)
 
     return jsonify({
         "latest":  latest,
         "history": history,
         "alerts":  alerts,
+        "predicted_cpu": prediction
     })
 
 
